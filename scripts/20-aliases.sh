@@ -8,23 +8,9 @@ alias generate_secure_string="openssl rand -base64 32"
 alias flush_dns_cache="sudo dscacheutil -flushcache; sudo killall -HUP mDNSResponder"
 
 alias vsdiff="code --new-window --diff"
-alias y="yarn"
-alias ya="yarn add"
-alias yd="yarn add -D"
-alias yr="yarn remove"
-alias serve="npx http-server"
 
 function clone {
   git clone gh:$1
-}
-
-function yat {
-  yarn add $1
-  yarn add -D @types/$1
-}
-
-function yrt {
-  yarn remove $1 @types/$1
 }
 
 function ramd {
