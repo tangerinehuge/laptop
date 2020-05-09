@@ -11,13 +11,9 @@ export DISPLAY=":0.0"
 export EDITOR="code --new-window --wait"
 
 export GOPATH=$HOME/Code/go
-export N_PREFIX="$HOME/.n"
 
-export PATH="/usr/local/bin:/usr/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/galen/n/bin"
-PATH+=:$N_PREFIX/bin
-PATH+=:$(yarn global bin) # must come after node
+export PATH="/usr/local/bin:/usr/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin"
 PATH+=:$GOPATH/bin
-PATH+=:$HOME/Library/Haskell/bin
 PATH+=:$HOME/.local/bin
 PATH+=:/usr/local/share/dotnet/
 
@@ -33,7 +29,7 @@ disable r
 
 source $ZSH/oh-my-zsh.sh
 
-plugins=(git zsh-autosuggestions yarn-autocompletions)
+plugins=(git zsh-autosuggestions)
 
 ssh-add ~/.ssh/id_rsa &>/dev/null
 
@@ -46,18 +42,9 @@ chmod +x ~/.laptop/scripts/*.sh
 for script in ~/.laptop/scripts/20-*.sh; do source $script; done
 for script in ~/.laptop/scripts/30-*.sh; do screen -dm -S Shared $script; done
 
-[ -f /Users/galen/.travis/travis.sh ] && source /Users/galen/.travis/travis.sh
-
 curl -s https://api.github.com/zen | sed 's/\n//'
-
-# when c --calendar_today_style="bold,fgyellow"
-when w --no-header --no-paging
 
 autoload -U promptinit; promptinit
 prompt spaceship
-
-
-source "/Users/galen/.oh-my-zsh/custom/themes/spaceship.zsh-theme"
-
 
 source "/Users/galen/.oh-my-zsh/custom/themes/spaceship.zsh-theme"
