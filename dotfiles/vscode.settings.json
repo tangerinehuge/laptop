@@ -1,5 +1,13 @@
 // Place your settings in this file to overwrite the default settings
 {
+  "python.jediEnabled": true,
+    "[python]": {
+
+    },
+  "git.autofetch": true,
+  "git.enableSmartCommit": true,
+  "git.autofetchPeriod": 1800,
+  "editor.rulers": [79,99]
   // "editor.fontFamily": "Inconsolata",
   "editor.fontFamily": "'Fira Code'",
   "editor.tabSize": 2,
@@ -16,42 +24,14 @@
   "zenMode.fullScreen": false,
   "zenMode.hideStatusBar": false,
   "files.exclude": {
-    "**/node_modules": true,
     "**/dist": false,
     "**/build": false,
-    "**/coverage": true,
-    "**/.serverless": true,
-    "**/*.old": true,
-    "**/dump.rdb": true,
-    "**/yarn.lock": true,
-    "**/package-lock.json": true,
-    "**/*.min.js": true
+    "**/*.old": true
   },
-  "eslint.autoFixOnSave": true,
-  "tslint.enable": true,
-  "tslint.autoFixOnSave": true,
-  "tslint.run": "onType",
   "window.zoomLevel": 0,
-  "explorer.confirmDragAndDrop": false,
-  "gitlens.advanced.messages": {
-    "suppressCommitHasNoPreviousCommitWarning": false,
-    "suppressCommitNotFoundWarning": false,
-    "suppressFileNotUnderSourceControlWarning": false,
-    "suppressGitVersionWarning": false,
-    "suppressLineUncommittedWarning": false,
-    "suppressNoRepositoryWarning": false,
-    "suppressResultsExplorerNotice": false,
-    "suppressShowKeyBindingsNotice": true,
-    "suppressUpdateNotice": false,
-    "suppressWelcomeNotice": true
-  },
+  //"explorer.confirmDragAndDrop": false,
   "workbench.startupEditor": "newUntitledFile",
-  "gitlens.codeLens.scopes": [
-    "document",
-    "containers"
-  ],
   "diffEditor.ignoreTrimWhitespace": true,
-  "gitlens.keymap": "chorded",
   "todohighlight.keywords": [
     {
       "text": "@TODO",
