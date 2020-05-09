@@ -7,7 +7,7 @@
   "git.autofetch": true,
   "git.enableSmartCommit": true,
   "git.autofetchPeriod": 1800,
-  "editor.rulers": [79,99]
+  "editor.rulers": [79,99],
   // "editor.fontFamily": "Inconsolata",
   "editor.fontFamily": "'Fira Code'",
   "editor.tabSize": 2,
