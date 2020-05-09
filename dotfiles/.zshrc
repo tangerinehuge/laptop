@@ -13,7 +13,7 @@ export EDITOR="code --new-window --wait"
 export GOPATH=$HOME/Code/go
 export N_PREFIX="$HOME/.n"
 
-export PATH="/usr/local/bin:/usr/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/caseywebb/n/bin"
+export PATH="/usr/local/bin:/usr/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/galen/n/bin"
 PATH+=:$N_PREFIX/bin
 PATH+=:$(yarn global bin) # must come after node
 PATH+=:$GOPATH/bin
@@ -46,7 +46,7 @@ chmod +x ~/.laptop/scripts/*.sh
 for script in ~/.laptop/scripts/20-*.sh; do source $script; done
 for script in ~/.laptop/scripts/30-*.sh; do screen -dm -S Shared $script; done
 
-[ -f /Users/casey/.travis/travis.sh ] && source /Users/casey/.travis/travis.sh
+[ -f /Users/galen/.travis/travis.sh ] && source /Users/galen/.travis/travis.sh
 
 curl -s https://api.github.com/zen | sed 's/\n//'
 
@@ -57,7 +57,7 @@ autoload -U promptinit; promptinit
 prompt spaceship
 
 
-source "/Users/casey/.oh-my-zsh/custom/themes/spaceship.zsh-theme"
+source "/Users/galen/.oh-my-zsh/custom/themes/spaceship.zsh-theme"
 
 
-source "/Users/casey/.oh-my-zsh/custom/themes/spaceship.zsh-theme"
+source "/Users/galen/.oh-my-zsh/custom/themes/spaceship.zsh-theme"
