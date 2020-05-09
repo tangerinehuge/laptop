@@ -1,9 +1,9 @@
 // Place your settings in this file to overwrite the default settings
 {
   "python.jediEnabled": true,
-    "[python]": {
+  "[python]": {
 
-    },
+  },
   "git.autofetch": true,
   "git.enableSmartCommit": true,
   "git.autofetchPeriod": 1800,
